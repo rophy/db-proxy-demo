@@ -1,0 +1,9 @@
+services:
+  oracledb:
+    # NOTE: This is not the official oracledb image, this is an unknown source.
+    # I am not sure if this can be legally used or not, use at your own risk.
+    image: ruchinksinha/oracledb:19.3.0.0
+    volumes:
+      - oradata:/opt/oracle/oradata
+volumes:
+  oradata: {}
