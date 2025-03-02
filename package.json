@@ -1,0 +1,14 @@
+{
+  "name": "db-proxy-demo",
+  "version": "1.0.0",
+  "description": "Demo how to implement a db proxy with nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.12.0"
+  }
+}
