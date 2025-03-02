@@ -5,5 +5,14 @@ services:
     image: ruchinksinha/oracledb:19.3.0.0
     volumes:
       - oradata:/opt/oracle/oradata
+  mariadb:
+    image: mariadb:10.6.21-focal
+    environment:
+      MARIADB_USER: example-user
+      MARIADB_PASSWORD: my_cool_secret
+      MARIADB_DATABASE: exmple-database
+      MARIADB_ROOT_PASSWORD: my-secret-pw
+    ports:
+    - 3306:3306
 volumes:
   oradata: {}
